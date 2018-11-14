@@ -1,0 +1,11 @@
+clouds:
+ cloud:
+   region_name: 
+   auth:
+     username: 
+     password: 
+     project_name: 
+     auth_url: 
+     project_domain_name: Default
+     user_domain_name: Default
+

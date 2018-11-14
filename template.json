@@ -1,0 +1,31 @@
+{
+  "_comment": "Update you base image with Yum or Apt",
+  "builders": [
+    {
+      "type": "openstack",
+      "identity_endpoint": "",
+      "tenant_name": "",
+      "username": "",
+      "password": "",
+      "domain_name": "",
+      "region": "",
+      "ssh_username": "__IMAGE_SSH_USERNAME__",
+      "image_name": "__IMAGE_NAME__",
+      "source_image_name": "",
+      "networks": "",
+      "flavor": "",
+      "floating_ip_network": "",
+      "use_blockstorage_volume": true,
+      "config_drive": false,
+      "image_disk_format": "raw",
+      "security_groups":""
+    }
+  ],
+
+  "provisioners": [
+    {
+      "type": "shell",
+      "script": "update.sh"
+    }
+  ]
+}
